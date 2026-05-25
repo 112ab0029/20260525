@@ -1,0 +1,664 @@
+<!DOCTYPE html>
+
+<html class="light" lang="zh-TW"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Serene - 頂級香氛</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&amp;family=Plus+Jakarta+Sans:wght@600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-error-container": "#93000a",
+                    "on-secondary-container": "#596374",
+                    "primary-fixed-dim": "#95d3be",
+                    "surface-container-low": "#f2f4f1",
+                    "inverse-surface": "#2e312f",
+                    "surface": "#f8faf7",
+                    "outline-variant": "#bfc9c3",
+                    "on-surface-variant": "#404945",
+                    "surface-container": "#eceeeb",
+                    "on-primary-fixed": "#002018",
+                    "on-background": "#191c1b",
+                    "on-tertiary": "#ffffff",
+                    "inverse-primary": "#95d3be",
+                    "on-tertiary-container": "#7a423c",
+                    "secondary-fixed": "#d9e3f7",
+                    "on-primary-container": "#1c5c4b",
+                    "surface-container-high": "#e7e9e6",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed": "#370d0a",
+                    "outline": "#707975",
+                    "on-primary": "#ffffff",
+                    "primary": "#2b6958",
+                    "on-tertiary-fixed-variant": "#6d3731",
+                    "surface-dim": "#d8dbd8",
+                    "tertiary-fixed": "#ffdad6",
+                    "on-secondary-fixed-variant": "#3d4757",
+                    "on-surface": "#191c1b",
+                    "secondary": "#555f70",
+                    "surface-container-highest": "#e1e3e0",
+                    "on-primary-fixed-variant": "#0b5040",
+                    "primary-container": "#94d2bd",
+                    "inverse-on-surface": "#eff1ee",
+                    "tertiary-container": "#ffb2a9",
+                    "error": "#ba1a1a",
+                    "tertiary": "#894e47",
+                    "primary-fixed": "#b0efda",
+                    "surface-bright": "#f8faf7",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed-dim": "#bdc7db",
+                    "secondary-container": "#d6e0f4",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#ffb4ab",
+                    "on-secondary": "#ffffff",
+                    "surface-tint": "#2b6958",
+                    "on-secondary-fixed": "#121c2a",
+                    "surface-variant": "#e1e3e0",
+                    "background": "#f8faf7"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.25rem",
+                    "lg": "0.5rem",
+                    "xl": "0.75rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "container-max": "1120px",
+                    "gutter": "24px",
+                    "section-gap-lg": "120px",
+                    "margin-mobile": "20px",
+                    "unit": "8px",
+                    "section-gap-sm": "64px"
+            },
+            "fontFamily": {
+                    "display-lg": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-sm": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "headline-md": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "label-md": [
+                            "Inter"
+                    ],
+                    "body-md": [
+                            "Inter"
+                    ],
+                    "display-lg-mobile": [
+                            "Plus Jakarta Sans"
+                    ],
+                    "body-lg": [
+                            "Inter"
+                    ],
+                    "caption": [
+                            "Inter"
+                    ]
+            },
+            "fontSize": {
+                    "display-lg": [
+                            "48px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "headline-md": [
+                            "30px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "letterSpacing": "0.01em",
+                                    "fontWeight": "600"
+                            }
+                    ],
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.02em",
+                                    "fontWeight": "700"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.7",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "caption": [
+                            "12px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "400"
+                            }
+                    ]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        /* Level 1 Shadow: 0px 4px 20px, 4% opacity Charcoal (#191C1B) */
+        .shadow-level-1 {
+            box-shadow: 0px 4px 20px rgba(25, 28, 27, 0.04);
+        }
+        /* Level 2 Shadow (Hover): 0px 10px 30px, 8% opacity Charcoal */
+        .shadow-level-2 {
+            box-shadow: 0px 10px 30px rgba(25, 28, 27, 0.08);
+        }
+        .bg-soft-mint-pattern {
+            background-color: #f8faf7;
+            background-image: radial-gradient(#94d2bd 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md text-body-md antialiased selection:bg-primary-container selection:text-on-primary-container">
+<!-- TopNavBar -->
+<header class="w-full sticky top-0 z-50 bg-surface/80 backdrop-blur-md">
+<div class="flex justify-between items-center px-gutter py-[16px] max-w-container-max mx-auto">
+<!-- Brand -->
+<a class="font-display-lg text-headline-sm font-bold tracking-tight text-on-surface hover:opacity-80 transition-all duration-300" href="#">
+                SERENE
+            </a>
+<!-- Navigation Links (Web) -->
+<nav class="hidden md:flex items-center gap-8">
+<!-- Active Nav Item (Home) -->
+<a class="font-label-md text-label-md text-primary font-semibold border-b-2 border-primary pb-1 hover:opacity-80 transition-all duration-300 active:scale-95" href="#">首頁</a>
+<!-- Inactive Nav Items -->
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 hover:opacity-80 active:scale-95" href="#">產品系列</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 hover:opacity-80 active:scale-95" href="#">品牌故事</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200 hover:opacity-80 active:scale-95" href="#">聯絡我們</a>
+</nav>
+<!-- Trailing Action -->
+<a href="#contact" class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-6 py-3 rounded-full hover:bg-on-primary-container hover:text-on-primary-container transition-colors duration-200 hover:opacity-80 active:scale-95 shadow-level-1 hover:shadow-level-2">
+                與我們聊聊
+            </a>
+<!-- Mobile Menu Icon (Placeholder for interaction) -->
+<button class="md:hidden text-on-surface p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</header>
+<main class="w-full">
+
+    <div id="home-view" class="view-section active">
+        <!-- Hero Section -->
+<section class="w-full px-margin-mobile md:px-gutter py-section-gap-sm md:py-section-gap-lg max-w-container-max mx-auto flex flex-col md:flex-row items-center gap-section-gap-sm">
+<div class="flex-1 flex flex-col items-start space-y-8">
+<div class="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-primary-container/20 text-primary font-label-md text-label-md">
+<span class="w-2 h-2 rounded-full bg-primary"></span>
+                    歡迎洽詢合作
+                </div>
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface">
+<span class="text-primary">Serene 寧靜香氛。</span><br/>
+                    用心打造專屬氛圍。
+                </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl">
+                    探索我們精心調配的手工香水、香氛蠟燭與精油系列，為您的空間帶來寧靜。
+                </p>
+<div class="flex gap-4 pt-4">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-on-primary-container transition-colors duration-200 shadow-level-1 hover:shadow-level-2" href="#work">
+                        探索系列
+                    </a>
+</div>
+</div>
+<div class="flex-1 w-full relative">
+<!-- Abstract subtle shape/image container -->
+<div class="aspect-square w-full max-w-md mx-auto rounded-[2rem] bg-surface-container-low overflow-hidden relative shadow-level-1">
+<img alt="Premium scented candle in frosted glass" class="w-full h-full object-cover opacity-90 mix-blend-multiply" data-alt="Professional product photography of a premium scented candle in a frosted glass jar, minimalist aesthetic, soft natural lighting, placed on a light wood surface with a sprig of dried lavender, serene and calming atmosphere, matches #94d2bd mint green accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGF6sUq-40YKG9uwX1RpnxJfADutJXaDommAD4DOo5r2YbZAwl2kD5Or7bvAdHAwbKII4hPyOr4WIJ-I787uyvTexQuTn5Wb3GrdAbp745wmQm_0n4zyJDjfj8n51WrEHGz1L5FpmebxqL0uW2DqXKIcnyoV5sExd2QnRFHltHGGt53mAKVQxNB-r8LdQhkK_FUlVPXvxojS6OY2P5sCD2jSwOpja97r3CRXzWIeC81_xda8iZBz1qSF2sQAm4_Iod4n9NHA865FO1"/>
+</div>
+</div>
+</section>
+<!-- Featured Work Preview -->
+<section class="w-full bg-surface-container-low py-section-gap-sm md:py-section-gap-lg" id="work">
+<div class="px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="mb-12 flex justify-between items-end">
+<div>
+<h2 class="font-headline-md text-headline-md text-on-surface mb-2">產品系列</h2>
+<p class="font-body-md text-body-md text-on-surface-variant">手工香水與純精油系列。</p>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Project Card 1 -->
+<a class="group block bg-surface-container-lowest rounded-2xl overflow-hidden shadow-level-1 hover:shadow-level-2 transition-all duration-300 transform hover:-translate-y-1" href="#">
+<div class="aspect-[4/3] bg-surface-variant relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Professional product photography of a premium scented candle in a frosted glass jar, minimalist aesthetic, soft natural lighting, placed on a light wood surface with a sprig of dried lavender, serene and calming atmosphere, matches #94d2bd mint green accents." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGF6sUq-40YKG9uwX1RpnxJfADutJXaDommAD4DOo5r2YbZAwl2kD5Or7bvAdHAwbKII4hPyOr4WIJ-I787uyvTexQuTn5Wb3GrdAbp745wmQm_0n4zyJDjfj8n51WrEHGz1L5FpmebxqL0uW2DqXKIcnyoV5sExd2QnRFHltHGGt53mAKVQxNB-r8LdQhkK_FUlVPXvxojS6OY2P5sCD2jSwOpja97r3CRXzWIeC81_xda8iZBz1qSF2sQAm4_Iod4n9NHA865FO1"/>
+</div>
+<div class="p-[32px]">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-secondary-container/30 text-on-secondary-container px-3 py-1 rounded-full font-caption text-caption">Candle</span>
+<span class="bg-secondary-container/30 text-on-secondary-container px-3 py-1 rounded-full font-caption text-caption">Relaxation</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">純粹靜謐香氛蠟燭</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">薰衣草與滑順檀香的香調，撫慰您的心靈。</p>
+</div>
+</a>
+<!-- Project Card 2 -->
+<a class="group block bg-surface-container-lowest rounded-2xl overflow-hidden shadow-level-1 hover:shadow-level-2 transition-all duration-300 transform hover:-translate-y-1" href="#">
+<div class="aspect-[4/3] bg-surface-variant relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="A collection of minimalist amber glass essential oil bottles and a reed diffuser on a clean white marble countertop, soft shadows, warm minimalist aesthetic, professional e-commerce style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU0_ySLWSvPMt3Lgz2EPtCEDd3q5ml10EYwjELtfkXv5iIoimokn_DfS7O2CyEnl7ledOSiTlKu_NhBv2Cw6FrvFKIxxFreymK4myTBZvOgFDlsbxu-TbLagNi6Rf2f4sQ-FHwTACaIkbw4EfAmH-plS1RiKxrYrPZNJDDi_rKZjCUCLcAYAP-llT-ctrM5nz01vVrPUd3LGlaO8jG8o6L8SOsoL7l1d6GtBvunfwU7F6WlV_CjOJzTyWynVgmq4wrA1ghz7BfUSdC"/>
+</div>
+<div class="p-[32px]">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-secondary-container/30 text-on-secondary-container px-3 py-1 rounded-full font-caption text-caption">Essential Oil</span>
+<span class="bg-secondary-container/30 text-on-secondary-container px-3 py-1 rounded-full font-caption text-caption">身心健康</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">光環純精油</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">為您的日常儀式提供純淨的植物萃取。</p>
+</div>
+</a>
+<!-- Project Card 3 -->
+<a class="group block bg-surface-container-lowest rounded-2xl overflow-hidden shadow-level-1 hover:shadow-level-2 transition-all duration-300 transform hover:-translate-y-1" href="#">
+<div class="aspect-[4/3] bg-surface-variant relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Close-up of high-end perfume bottle with a clean label, elegant spray mist, soft focus background of a botanical garden, airy and fresh feeling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRpiTaoH9czDOh924L7ay-kpitH4AGdyzWsnAeRN5phVCPNMqKUTHLOcQZqEBrHbdZqIQYJ-4NumUCU__oMCHfhaLt2JUOJBb_RlQVyUn3Hk-bmmB4m0MkPfNPrJ1QEs5uWRcGnafLq8mXs6gtOLT_boJEuzMnpUGh_-tw7e3dK1D-9ArXm9lggTVcZ4BCbQRmWHxsD7PWJT7DlmGeh_7xKb7eUa8af3eYnYmgblkBKJWki3TSBD7M2NibHl1FH5GQmgQenSoj7P2M"/>
+</div>
+<div class="p-[32px]">
+<div class="flex flex-wrap gap-2 mb-4">
+<span class="bg-secondary-container/30 text-on-secondary-container px-3 py-1 rounded-full font-caption text-caption">Perfume</span>
+<span class="bg-secondary-container/30 text-on-secondary-container px-3 py-1 rounded-full font-caption text-caption">Signature</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-2">植物淡香精</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">靈感來自秘境花園的清新空氣香調。</p>
+</div>
+</a>
+</div>
+</div>
+</section>
+<!-- Brief About Me -->
+<section class="w-full px-margin-mobile md:px-gutter py-section-gap-lg max-w-container-max mx-auto">
+<div class="bg-surface-container-lowest rounded-[2rem] p-8 md:p-[64px] shadow-level-1 flex flex-col md:flex-row items-center gap-12 relative overflow-hidden">
+<!-- Decorative background element -->
+<div class="absolute top-0 right-0 w-64 h-64 bg-primary-container/20 rounded-full blur-3xl -translate-y-1/2 translate-x-1/2"></div>
+<div class="flex-1 z-10">
+<h2 class="font-headline-md text-headline-md text-on-surface mb-6">源於自然，純粹引導。</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-6">
+                        我們相信最好的香氛來自大地。透過採購合乎道德的天然成分，我們創造出能改變環境並振奮精神的香氣。我們的方法結合了植物學智慧與永續實踐，確保每一次呼吸都是純粹寧靜的時刻。
+                    </p>
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md font-semibold hover:text-on-primary-container transition-colors duration-200 group" href="#">
+                        閱讀完整故事 
+                        <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
+</a>
+</div>
+<div class="w-full md:w-1/3 aspect-square rounded-full bg-surface-variant overflow-hidden z-10 shadow-level-1">
+<img alt="Botanical extracts" class="w-full h-full object-cover filter hover:filter-none transition-all duration-500" data-alt="A collection of minimalist amber glass essential oil bottles and a reed diffuser on a clean white marble countertop, soft shadows, warm minimalist aesthetic, professional e-commerce style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU0_ySLWSvPMt3Lgz2EPtCEDd3q5ml10EYwjELtfkXv5iIoimokn_DfS7O2CyEnl7ledOSiTlKu_NhBv2Cw6FrvFKIxxFreymK4myTBZvOgFDlsbxu-TbLagNi6Rf2f4sQ-FHwTACaIkbw4EfAmH-plS1RiKxrYrPZNJDDi_rKZjCUCLcAYAP-llT-ctrM5nz01vVrPUd3LGlaO8jG8o6L8SOsoL7l1d6GtBvunfwU7F6WlV_CjOJzTyWynVgmq4wrA1ghz7BfUSdC"/>
+</div>
+</div>
+</section>
+    </div>
+    <div id="collection-view" class="view-section hidden">
+        <div class="flex flex-col items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto pt-16 pb-section-gap-lg">
+        <!-- Page Header -->
+<section class="w-full max-w-3xl mb-16 text-center md:text-left flex flex-col gap-6">
+<h1 class="font-display-lg text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface">產品系列</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                精選的手工香氛系列，採用純淨植物成分與極簡優雅的風格打造。
+            </p>
+</section>
+<!-- Project Grid (Bento/Masonry Inspired) -->
+<section class="w-full grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+<!-- Project Card 1 (Large Span) -->
+<a class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-1 transition-transform duration-300 md:col-span-2 shadow-[0px_4px_20px_rgba(25,28,27,0.04)] hover:shadow-[0px_10px_30px_rgba(25,28,27,0.08)]" href="#">
+<div class="aspect-[16/9] w-full bg-surface-variant overflow-hidden relative">
+<img alt="Project 1" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A sleek, modern web application displayed on a high-end laptop monitor in a brightly lit, minimalist workspace. The UI design on screen features generous white space, subtle mint green accents, and crisp typography. Sunlight streams across a clean wooden desk, highlighting a nearby potted succulent and a ceramic coffee mug. The overall mood is professional, calm, and focused on clean digital aesthetics." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBGF6sUq-40YKG9uwX1RpnxJfADutJXaDommAD4DOo5r2YbZAwl2kD5Or7bvAdHAwbKII4hPyOr4WIJ-I787uyvTexQuTn5Wb3GrdAbp745wmQm_0n4zyJDjfj8n51WrEHGz1L5FpmebxqL0uW2DqXKIcnyoV5sExd2QnRFHltHGGt53mAKVQxNB-r8LdQhkK_FUlVPXvxojS6OY2P5sCD2jSwOpja97r3CRXzWIeC81_xda8iZBz1qSF2sQAm4_Iod4n9NHA865FO1"/>
+</div>
+<div class="p-8 flex flex-col gap-3">
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-[#e0f2fe] text-[#0284c7] font-label-md text-caption rounded-full">居家香氛</span>
+<span class="px-3 py-1 bg-[#e0f2fe] text-[#0284c7] font-label-md text-caption rounded-full">熱銷商品</span>
+</div>
+<h3 class="font-headline-md text-headline-sm text-on-surface group-hover:text-primary transition-colors">純粹靜謐香氛蠟燭</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">手工傾倒的大豆蠟，帶有法國薰衣草與滑順檀香的香調。</p>
+</div>
+</a>
+<!-- Project Card 2 -->
+<a class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-1 transition-transform duration-300 shadow-[0px_4px_20px_rgba(25,28,27,0.04)] hover:shadow-[0px_10px_30px_rgba(25,28,27,0.08)]" href="#">
+<div class="aspect-[4/3] md:aspect-auto md:h-[240px] lg:h-[300px] w-full bg-surface-variant overflow-hidden relative">
+<img alt="Project 2" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="Close up of a mobile application interface displayed on a smartphone held in a person's hand. The app features a minimalist e-commerce design with soft off-white backgrounds and elegant serif typography. The lighting is soft and diffused, creating a serene, premium feel typical of high-end lifestyle brands. Warm minimalist aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDU0_ySLWSvPMt3Lgz2EPtCEDd3q5ml10EYwjELtfkXv5iIoimokn_DfS7O2CyEnl7ledOSiTlKu_NhBv2Cw6FrvFKIxxFreymK4myTBZvOgFDlsbxu-TbLagNi6Rf2f4sQ-FHwTACaIkbw4EfAmH-plS1RiKxrYrPZNJDDi_rKZjCUCLcAYAP-llT-ctrM5nz01vVrPUd3LGlaO8jG8o6L8SOsoL7l1d6GtBvunfwU7F6WlV_CjOJzTyWynVgmq4wrA1ghz7BfUSdC"/>
+</div>
+<div class="p-6 flex flex-col gap-3 flex-grow">
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 bg-[#e0f2fe] text-[#0284c7] font-label-md text-caption rounded-full">身心健康</span>
+<span class="px-3 py-1 bg-[#e0f2fe] text-[#0284c7] font-label-md text-caption rounded-full">禮盒組</span>
+</div>
+<h3 class="font-headline-md text-headline-sm text-on-surface group-hover:text-primary transition-colors text-xl">光環儀式套組</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2 mt-auto">適合冥想與睡眠的三款舒緩精油。</p>
+</div>
+</a>
+<!-- Project Card 3 -->
+<a class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-1 transition-transform duration-300 shadow-[0px_4px_20px_rgba(25,28,27,0.04)] hover:shadow-[0px_10px_30px_rgba(25,28,27,0.08)]" href="#">
+<div class="aspect-[4/3] w-full bg-surface-variant overflow-hidden relative">
+<img alt="Project 3" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A clean, typographic branding presentation laid out on a soft grey surface. Several business cards and a letterhead feature a minimalist logo utilizing deep charcoal and mint green. Soft, natural light casts gentle shadows across the premium textured paper. The composition exudes professional trust and modern brand identity design." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRpiTaoH9czDOh924L7ay-kpitH4AGdyzWsnAeRN5phVCPNMqKUTHLOcQZqEBrHbdZqIQYJ-4NumUCU__oMCHfhaLt2JUOJBb_RlQVyUn3Hk-bmmB4m0MkPfNPrJ1QEs5uWRcGnafLq8mXs6gtOLT_boJEuzMnpUGh_-tw7e3dK1D-9ArXm9lggTVcZ4BCbQRmWHxsD7PWJT7DlmGeh_7xKb7eUa8af3eYnYmgblkBKJWki3TSBD7M2NibHl1FH5GQmgQenSoj7P2M"/>
+</div>
+<div class="p-6 flex flex-col gap-3">
+<div class="flex gap-2 flex-wrap">
+<span class="px-3 py-1 bg-[#e0f2fe] text-[#0284c7] font-label-md text-caption rounded-full">個人香氛</span>
+</div>
+<h3 class="font-headline-md text-headline-sm text-on-surface group-hover:text-primary transition-colors text-xl">秘密花園淡香精</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">茉莉、白玫瑰與晨露的活力花束。</p>
+</div>
+</a>
+<!-- Project Card 4 -->
+<a class="group relative flex flex-col bg-surface-container-lowest rounded-xl overflow-hidden hover:-translate-y-1 transition-transform duration-300 md:col-span-2 shadow-[0px_4px_20px_rgba(25,28,27,0.04)] hover:shadow-[0px_10px_30px_rgba(25,28,27,0.08)]" href="#">
+<div class="aspect-[16/9] md:aspect-[21/9] w-full bg-surface-variant overflow-hidden relative">
+<img alt="Project 4" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" data-alt="A wide dashboard UI showing data analytics with smooth, flowing line charts and soft area graphs in shades of primary mint and subtle grey. The interface is displayed against a pure white background, emphasizing the 'negative space as content' philosophy. The data presentation is clear, airy, and avoids visual clutter, reflecting a high-end SaaS product." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMtJU8wlBOdPsNaFNnTI7bqqQ5pypXR_Xa8p579bbEQrmp6zp2rPQQLNk-dWemb_k2gDPbCXJnbcUuy_n3QPNDSGnRVB1Cl-lzHBY9O4w2E0EtG3V_XdlgAmUkVHrEqd-x-VyqAIJX6GtjzQq2wIjVX7yPx9e5ezhN0EBZqLUFMt8qkTwUJuH0JEhmZ_Ysi9FIICthuSTI-stxYPtz3hhvWanK2fx6cAqsA5DJDEQg-fMPrr0JU4y4QG7MUPhPdLMGmhf60QDcH3Sv"/>
+</div>
+<div class="p-8 flex flex-col gap-3">
+<div class="flex gap-2">
+<span class="px-3 py-1 bg-[#e0f2fe] text-[#0284c7] font-label-md text-caption rounded-full">居家裝飾</span>
+</div>
+<h3 class="font-headline-md text-headline-sm text-on-surface group-hover:text-primary transition-colors">經典擴香瓶</h3>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">為任何房間提供持久的氛圍香氣。</p>
+</div>
+</a>
+</section>
+        </div>
+    </div>
+    <div id="story-view" class="view-section hidden">
+        <!-- Personal Intro Section -->
+<section class="max-w-container-max mx-auto px-gutter pt-section-gap-sm md:pt-section-gap-lg pb-section-gap-sm">
+<div class="grid grid-cols-1 md:grid-cols-12 gap-12 items-center">
+<!-- Headshot Column -->
+<div class="md:col-span-5 relative group">
+<div class="absolute inset-0 bg-primary-container rounded-3xl transform rotate-3 scale-105 opacity-20 transition-transform duration-500 group-hover:rotate-6"></div>
+<div class="relative rounded-3xl overflow-hidden shadow-level-1 bg-surface-container-lowest aspect-[4/5]">
+<img alt="Close-up of high-end perfume bottle with a clean label, elegant spray mist, soft focus background of a botanical garden, airy and fresh feeling." class="w-full h-full object-cover transition-all duration-500" data-alt="Close-up of high-end perfume bottle with a clean label, elegant spray mist, soft focus background of a botanical garden, airy and fresh feeling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRpiTaoH9czDOh924L7ay-kpitH4AGdyzWsnAeRN5phVCPNMqKUTHLOcQZqEBrHbdZqIQYJ-4NumUCU__oMCHfhaLt2JUOJBb_RlQVyUn3Hk-bmmB4m0MkPfNPrJ1QEs5uWRcGnafLq8mXs6gtOLT_boJEuzMnpUGh_-tw7e3dK1D-9ArXm9lggTVcZ4BCbQRmWHxsD7PWJT7DlmGeh_7xKb7eUa8af3eYnYmgblkBKJWki3TSBD7M2NibHl1FH5GQmgQenSoj7P2M"/>
+</div>
+</div>
+<!-- Story Column -->
+<div class="md:col-span-7 space-y-8">
+<div>
+<h1 class="font-display-lg text-display-lg md:hidden text-on-surface mb-2">品牌故事</h1>
+<h1 class="font-display-lg text-display-lg hidden md:block text-on-surface mb-4">品牌故事</h1>
+<div class="w-16 h-1 bg-primary rounded-full mb-6"></div>
+<p class="font-body-lg text-body-lg text-on-surface-variant leading-relaxed">
+                            我們相信香氣擁有改變空間與提升心情的力量。過去十年間，我們致力於打造優先考慮純淨、意圖與寧靜感的嗅覺體驗。
+                        </p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 leading-relaxed">
+                            我們的旅程始於對植物精華的純粹著迷，在這裡我們學到了平衡與和諧的深遠重要性。轉向手工香水領域，使我們能將這些原則融入日常儀式。我們在自然之美與精緻優雅的交匯處茁壯成長，創造出聞起來如同感受般美好的香氛。
+                        </p>
+<p class="font-body-md text-body-md text-on-surface-variant mt-4 leading-relaxed">
+                            當我們不調配新香調時，您會發現我們正在探索鬱蔥的花園、策劃氛圍空間，或在寧靜的大自然中尋找靈感。
+                        </p>
+</div>
+<div class="flex items-center space-x-6 pt-4">
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">100%</span>
+<span class="font-caption text-caption text-outline">天然成分</span>
+</div>
+<div class="w-px h-12 bg-outline-variant"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">微量</span>
+<span class="font-caption text-caption text-outline">批量手工製作</span>
+</div>
+<div class="w-px h-12 bg-outline-variant"></div>
+<div class="flex flex-col">
+<span class="font-headline-sm text-headline-sm text-primary">零</span>
+<span class="font-caption text-caption text-outline">浪費包裝</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Skills Section (Bento Grid Style) -->
+<section class="bg-surface-container-low py-section-gap-sm">
+<div class="max-w-container-max mx-auto px-gutter">
+<div class="text-center mb-12">
+<h2 class="font-headline-md text-headline-md text-on-surface">我們的價值觀</h2>
+<p class="font-body-md text-body-md text-outline mt-2">指導我們工藝與創作的原則。</p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Design Box -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+<div class="w-12 h-12 bg-primary-container rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-primary-container">spa</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">純淨</h3>
+<div class="flex flex-wrap gap-2">
+<span class="chip px-4 py-2 rounded-full font-label-md text-label-md">純精油</span>
+<span class="chip px-4 py-2 rounded-full font-label-md text-label-md">無合成物</span>
+<span class="chip px-4 py-2 rounded-full font-label-md text-label-md">純素</span>
+<span class="chip px-4 py-2 rounded-full font-label-md text-label-md">零殘忍</span>
+</div>
+</div>
+<!-- Development Box -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300">
+<div class="w-12 h-12 bg-secondary-container rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-secondary-container">water_drop</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">工藝</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-secondary-container/30 text-secondary px-4 py-2 rounded-full font-label-md text-label-md">手工傾倒</span>
+<span class="bg-secondary-container/30 text-secondary px-4 py-2 rounded-full font-label-md text-label-md">微量 Batches</span>
+<span class="bg-secondary-container/30 text-secondary px-4 py-2 rounded-full font-label-md text-label-md">手工藝</span>
+<span class="bg-secondary-container/30 text-secondary px-4 py-2 rounded-full font-label-md text-label-md">熟成工序</span>
+</div>
+</div>
+<!-- Strategy Box -->
+<div class="bg-surface-container-lowest p-8 rounded-2xl shadow-level-1 hover:shadow-level-2 transition-shadow duration-300 md:col-span-1">
+<div class="w-12 h-12 bg-tertiary-container rounded-xl flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-on-tertiary-container">recycling</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface mb-4">永續性</h3>
+<div class="flex flex-wrap gap-2">
+<span class="bg-tertiary-container/30 text-tertiary px-4 py-2 rounded-full font-label-md text-label-md">玻璃瓶身</span>
+<span class="bg-tertiary-container/30 text-tertiary px-4 py-2 rounded-full font-label-md text-label-md">再生紙</span>
+<span class="bg-tertiary-container/30 text-tertiary px-4 py-2 rounded-full font-label-md text-label-md">碳中和</span>
+<span class="bg-tertiary-container/30 text-tertiary px-4 py-2 rounded-full font-label-md text-label-md">合乎道德的採購</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Experience Timeline -->
+<section class="max-w-container-max mx-auto px-gutter py-section-gap-lg">
+<div class="text-center mb-16">
+<h2 class="font-headline-md text-headline-md text-on-surface">我們的旅程</h2>
+</div>
+<div class="max-w-3xl mx-auto">
+<div class="relative border-l border-outline-variant ml-4 md:ml-0 md:pl-0">
+<!-- Timeline Item 1 -->
+<div class="mb-12 relative pl-8 md:pl-12 group">
+<!-- Dot -->
+<div class="absolute w-4 h-4 bg-primary rounded-full -left-[8.5px] top-1 group-hover:scale-125 transition-transform duration-300"></div>
+<div class="flex flex-col md:flex-row md:items-baseline md:justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Serene 工作室開幕</h3>
+<span class="font-label-md text-label-md text-primary mt-1 md:mt-0">2023 — 至今</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mb-4">旗艦店</h4>
+<p class="font-body-md text-body-md text-outline leading-relaxed">
+                            開設了我們第一個專屬工作室空間，讓我們能夠擴大手工生產，同時保持對小批量工藝和個人風格的承諾。
+                        </p>
+</div>
+<!-- Timeline Item 2 -->
+<div class="mb-12 relative pl-8 md:pl-12 group">
+<div class="absolute w-4 h-4 bg-surface-container-highest border-2 border-primary rounded-full -left-[8.5px] top-1 group-hover:bg-primary transition-colors duration-300"></div>
+<div class="flex flex-col md:flex-row md:items-baseline md:justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">首個經典系列</h3>
+<span class="font-label-md text-label-md text-outline mt-1 md:mt-0">2019 — 2023</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mb-4">品牌發佈</h4>
+<p class="font-body-md text-body-md text-outline leading-relaxed">
+                            推出了包含六款經典香氛的基礎系列，確立了今日定義我們品牌的溫暖極簡美學。
+                        </p>
+</div>
+<!-- Timeline Item 3 (Education) -->
+<div class="relative pl-8 md:pl-12 group">
+<div class="absolute w-4 h-4 bg-surface-container-highest border-2 border-outline rounded-full -left-[8.5px] top-1"></div>
+<div class="flex flex-col md:flex-row md:items-baseline md:justify-between mb-2">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">品牌構想</h3>
+<span class="font-label-md text-label-md text-outline mt-1 md:mt-0">2018 — 2019</span>
+</div>
+<h4 class="font-label-md text-label-md text-on-surface-variant mb-4">理念</h4>
+<p class="font-body-md text-body-md text-outline leading-relaxed">
+                            開始探索植物香水藝術，嘗試天然萃取物與精油，創造平靜與健康的感覺。
+                        </p>
+</div>
+</div>
+</div>
+</section>
+    </div>
+    <div id="contact-view" class="view-section hidden">
+        <div class="flex flex-col items-center justify-center px-margin-mobile md:px-gutter py-section-gap-lg w-full max-w-container-max mx-auto min-h-[60vh]">
+        <div class="w-full max-w-[600px] text-center mb-12">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg mb-6 text-on-surface">我們很樂意聽聽您的聲音。</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant">
+                批發諮詢、香氛諮詢，或者只是想打個招呼。
+            </p>
+</div>
+<div class="w-full max-w-[600px] bg-surface-container-lowest rounded-xl p-8 md:p-12 shadow-[0_4px_20px_rgba(0,0,0,0.04)]">
+<form class="flex flex-col gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="name">姓名</label>
+<input class="w-full bg-surface-container-low border-outline-variant text-on-surface rounded-lg px-4 py-3 font-body-md text-body-md focus:border-primary focus:ring-1 focus:ring-primary transition-colors duration-200" id="name" name="name" placeholder="王大明" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="email">電子郵件</label>
+<input class="w-full bg-surface-container-low border-outline-variant text-on-surface rounded-lg px-4 py-3 font-body-md text-body-md focus:border-primary focus:ring-1 focus:ring-primary transition-colors duration-200" id="email" name="email" placeholder="john@example.com" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-md text-label-md text-on-surface-variant" for="message">訊息</label>
+<textarea class="w-full bg-surface-container-low border-outline-variant text-on-surface rounded-lg px-4 py-3 font-body-md text-body-md focus:border-primary focus:ring-1 focus:ring-primary transition-colors duration-200 resize-none" id="message" name="message" placeholder="我們能幫您什麼忙？" rows="5"></textarea>
+</div>
+<button class="mt-4 w-full bg-primary text-on-primary py-4 rounded-lg font-label-md text-label-md hover:bg-on-primary-fixed transition-colors duration-200 shadow-[0_4px_12px_rgba(43,105,88,0.2)] hover:shadow-[0_6px_16px_rgba(43,105,88,0.3)]" type="submit">
+                    Send 訊息
+                </button>
+</form>
+<div class="mt-12 pt-8 border-t border-outline-variant/30 text-center">
+<a class="font-headline-sm text-headline-sm text-primary hover:text-on-primary-fixed transition-colors duration-200 block mb-6" href="mailto:hello@serene-scents.com">hello@serene-scents.com</a>
+<div class="flex justify-center gap-6">
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#">Instagram</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#">Pinterest</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors duration-200 font-label-md text-label-md" href="#">TikTok</a>
+</div>
+</div>
+</div>
+        </div>
+    </div>
+    
+</main>
+<!-- Footer -->
+<footer class="w-full mt-section-gap-lg border-t border-outline-variant bg-surface">
+<div class="flex flex-col md:flex-row justify-between items-center px-gutter py-section-gap-sm max-w-container-max mx-auto gap-8">
+<div class="font-display-lg text-headline-sm font-bold text-on-surface">
+                SERENE
+            </div>
+<p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left order-3 md:order-2">
+                © 2024 Serene 香氛。用心調配。
+            </p>
+<div class="flex gap-6 order-2 md:order-3">
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">LinkedIn</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">Dribbble</a>
+<a class="font-label-md text-label-md text-on-surface-variant hover:text-primary transition-colors duration-200" href="#">GitHub</a>
+</div>
+</div>
+</footer>
+
+    <style>
+        .view-section {
+            display: none;
+            width: 100%;
+        }
+        .view-section.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const views = document.querySelectorAll('.view-section');
+            const navLinks = document.querySelectorAll('nav a');
+
+            function showView(hash) {
+                const viewId = hash ? hash.substring(1) + '-view' : 'home-view';
+                
+                let found = false;
+                views.forEach(view => {
+                    if (view.id === viewId) {
+                        view.classList.add('active');
+                        view.classList.remove('hidden');
+                        found = true;
+                    } else {
+                        view.classList.remove('active');
+                        view.classList.add('hidden');
+                    }
+                });
+                
+                if (!found && views.length > 0) {
+                    views[0].classList.add('active');
+                    views[0].classList.remove('hidden');
+                }
+
+                // Update active state in nav
+                navLinks.forEach(link => {
+                    const linkHash = link.getAttribute('href');
+                    if (linkHash === hash || (hash === '' && linkHash === '#home')) {
+                        link.classList.add('text-primary', 'font-semibold', 'border-b-2', 'border-primary');
+                        link.classList.remove('text-on-surface-variant');
+                    } else {
+                        link.classList.remove('text-primary', 'font-semibold', 'border-b-2', 'border-primary');
+                        link.classList.add('text-on-surface-variant');
+                    }
+                });
+            }
+
+            // Handle navigation clicks
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    // Update hrefs to be hash links if they aren't already
+                    const text = link.innerText.toLowerCase();
+                    let hash = '#home';
+                    if (text.includes('產品系列')) hash = '#collection';
+                    if (text.includes('品牌故事')) hash = '#story';
+                    if (text.includes('聯絡我們')) hash = '#contact';
+                    
+                    e.preventDefault();
+                    window.location.hash = hash;
+                });
+            });
+
+            // Handle hash change
+            window.addEventListener('hashchange', () => showView(window.location.hash));
+
+            // Initial load
+            showView(window.location.hash);
+        });
+    </script>
+    
+</body></html>
