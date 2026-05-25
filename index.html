@@ -230,7 +230,7 @@
                     探索我們精心調配的手工香水、香氛蠟燭與精油系列，為您的空間帶來寧靜。
                 </p>
 <div class="flex gap-4 pt-4">
-<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-on-primary-container transition-colors duration-200 shadow-level-1 hover:shadow-level-2" href="#work">
+<a class="inline-flex items-center justify-center bg-primary text-on-primary font-label-md text-label-md px-8 py-4 rounded-full hover:bg-on-primary-container transition-colors duration-200 shadow-level-1 hover:shadow-level-2" href="#collection">
                         探索系列
                     </a>
 </div>
@@ -307,7 +307,7 @@
 <p class="font-body-md text-body-md text-on-surface-variant mb-6">
                         我們相信最好的香氛來自大地。透過採購合乎道德的天然成分，我們創造出能改變環境並振奮精神的香氣。我們的方法結合了植物學智慧與永續實踐，確保每一次呼吸都是純粹寧靜的時刻。
                     </p>
-<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md font-semibold hover:text-on-primary-container transition-colors duration-200 group" href="#">
+<a class="inline-flex items-center gap-2 text-primary font-label-md text-label-md font-semibold hover:text-on-primary-container transition-colors duration-200 group" href="#story">
                         閱讀完整故事 
                         <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform" style="font-variation-settings: 'FILL' 0;">arrow_forward</span>
 </a>
@@ -636,6 +636,9 @@
                         link.classList.add('text-on-surface-variant');
                     }
                 });
+
+                // 每次切換頁面時自動捲動到最上方
+                window.scrollTo(0, 0);
             }
 
             // Handle navigation clicks
